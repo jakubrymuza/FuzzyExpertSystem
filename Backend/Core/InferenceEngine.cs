@@ -1,5 +1,6 @@
 ﻿using Backend.Auxiliary;
 using Backend.Core.Evaluables;
+using Backend.Core.Trips;
 using System;
 using System.Collections.Generic;
 
@@ -18,7 +19,7 @@ namespace Backend.Core
         private readonly Dictionary<string, IEvaluable> _QuizAnswers;
         private readonly IEvaluable _RootEvaluable;
 
-        private readonly List<Trip> _Trips;
+        private readonly List<ITrip> _Trips;
 
         public static InferenceEngine GetInstance()
         {
@@ -40,7 +41,7 @@ namespace Backend.Core
             return result;
         }
 
-        private double CalculateTrip(Trip trip)
+        private double CalculateTrip(ITrip trip)
         {
             var tripData = trip.Records;
 
@@ -70,7 +71,7 @@ namespace Backend.Core
             throw new NotImplementedException();
         }
 
-        private List<Trip> LoadTrips()
+        private List<ITrip> LoadTrips()
         {
             throw new NotImplementedException();
         }

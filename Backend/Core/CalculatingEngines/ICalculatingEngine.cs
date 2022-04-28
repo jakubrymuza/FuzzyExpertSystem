@@ -1,4 +1,4 @@
-﻿namespace Backend.Core.CalculatingEngine
+﻿namespace Backend.Core.CalculatingEngines
 {
     /// <summary>
     /// contains methods for calculating operator's values

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Backend.Core.CalculatingEngine
+namespace Backend.Core.CalculatingEngines
 {
     /// <summary>
     /// contains Lukasiewicz fuzzy operations

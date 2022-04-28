@@ -1,9 +1,9 @@
 ﻿using Backend.Core.Evaluables;
 using System.Collections.Generic;
 
-namespace Backend.Core
+namespace Backend.Core.Trips
 {
-    public class Trip
+    public class Trip : ITrip
     {
         public Dictionary<string, IEvaluable> Records { get; }
 
