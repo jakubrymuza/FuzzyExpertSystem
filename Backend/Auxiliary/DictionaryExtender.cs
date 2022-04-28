@@ -5,7 +5,7 @@ namespace Backend.Auxiliary
     public static class DictionaryExtender
     {
         /// <summary>
-        /// merges dictionaries into
+        /// merges dictionaries
         /// </summary>
         public static Dictionary<TKey, TValue> Merge<TKey, TValue>(
             this Dictionary<TKey, TValue> src,
