@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "ClientApp\ClientApp.csproj", "{33680467-4FB0-4D48-88FD-1B302ACAA56B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpertApp", "ExpertApp\ExpertApp.csproj", "{B67445A2-0584-44FA-B9B5-6C9678074126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend\Backend.csproj", "{4B9B8475-2130-427F-B599-E0B3B988BF19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33680467-4FB0-4D48-88FD-1B302ACAA56B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33680467-4FB0-4D48-88FD-1B302ACAA56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33680467-4FB0-4D48-88FD-1B302ACAA56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33680467-4FB0-4D48-88FD-1B302ACAA56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B67445A2-0584-44FA-B9B5-6C9678074126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B67445A2-0584-44FA-B9B5-6C9678074126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B67445A2-0584-44FA-B9B5-6C9678074126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B67445A2-0584-44FA-B9B5-6C9678074126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B9B8475-2130-427F-B599-E0B3B988BF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B9B8475-2130-427F-B599-E0B3B988BF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B9B8475-2130-427F-B599-E0B3B988BF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B9B8475-2130-427F-B599-E0B3B988BF19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {028CA69B-F3BE-4165-84EA-69E008F5824C}
+	EndGlobalSection
+EndGlobal
