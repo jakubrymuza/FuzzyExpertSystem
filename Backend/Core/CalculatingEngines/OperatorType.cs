@@ -1,4 +1,4 @@
-﻿namespace Backend.Core
+﻿namespace Backend.Core.CalculatingEngines
 {
     /// <summary>
     /// represents fuzzy operators types
