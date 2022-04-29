@@ -18,7 +18,7 @@ namespace Backend.Core
         private Dictionary<string, IEvaluable>? _Evaluables;
         private readonly Dictionary<string, IEvaluable> _Rules;
         private readonly Dictionary<string, IEvaluable> _QuizAnswers;
-        private readonly IEvaluable _RootEvaluable;
+        private IEvaluable _RootEvaluable;
 
         private readonly List<ITrip> _Trips;
 
@@ -65,9 +65,11 @@ namespace Backend.Core
             _RootEvaluable = LoadRoot();
         }
 
-        public void AddRule(string firstColumn, OperatorType operatorType, string secondColumn, string ruleName)
+        public void AddRule(string firstColumn, OperatorType operatorType, string secondColumn, string ruleName, bool isRoot)
         {
-            _Rules.TryAdd(ruleName, new Rule(ruleName, firstColumn, secondColumn, operatorType));
+            Rule rule = new(ruleName, firstColumn, secondColumn, operatorType, isRoot);
+            _Rules.TryAdd(ruleName, rule);
+            if (isRoot) _RootEvaluable = rule; 
             SaveRules();
         }
 
@@ -77,7 +79,7 @@ namespace Backend.Core
             SaveRules();
         }
 
-        public void SaveRules()
+        private void SaveRules()
         {
             var options = new JsonSerializerOptions { WriteIndented = true };
             // The following code is necessary to serialize all properties from Rule class
@@ -90,16 +92,19 @@ namespace Backend.Core
             System.IO.File.WriteAllText(RULES_PATH, jsonString);
         }
 
-        private static Dictionary<string, IEvaluable> LoadRules()
+        private Dictionary<string, IEvaluable> LoadRules()
         {
             string jsonString = System.IO.File.ReadAllText(RULES_PATH);
             System.Text.Json.Nodes.JsonObject rootObject = System.Text.Json.Nodes.JsonNode.Parse(jsonString)!.AsObject();
             Dictionary<string, IEvaluable> rules = new();
             foreach (var rule in rootObject)
             {
-                rules.Add(rule.Key, new Rule(rule.Key, rule.Value!["FirstArgumentName"]!.ToString(), 
+                Rule newRule = new Rule(rule.Key, rule.Value!["FirstArgumentName"]!.ToString(),
                     rule.Value!["SecondArgumentName"]!.ToString(),
-                    (OperatorType)(int)rule!.Value!["OperatorType"]!));
+                    (OperatorType)(int)rule!.Value!["OperatorType"]!,
+                    (bool)rule!.Value!["IsRoot"]!);
+                rules.Add(rule.Key, newRule);
+                if (newRule.IsRoot) _RootEvaluable = newRule;
             }
             return rules;
         }
@@ -109,7 +114,7 @@ namespace Backend.Core
             throw new NotImplementedException();
         }
 
-        private static List<ITrip> LoadTrips()
+        private List<ITrip> LoadTrips()
         {
             string jsonString = System.IO.File.ReadAllText(TRIPS_PATH);
             System.Text.Json.Nodes.JsonArray rootObject = System.Text.Json.Nodes.JsonNode.Parse(jsonString)!.AsArray();
@@ -138,7 +143,8 @@ namespace Backend.Core
 
         private IEvaluable LoadRoot()
         {
-            throw new NotImplementedException();
+            if (_RootEvaluable == null) throw new Exception("No root evaluable set.");
+            return _RootEvaluable;
         }
     }
 }

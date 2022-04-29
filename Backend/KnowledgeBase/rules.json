@@ -1,14 +1,23 @@
 {
-  "testRule": {
-    "Name": "testRule",
+  "test1": {
+    "Name": "test1",
     "FirstArgumentName": "Mountains",
     "SecondArgumentName": "Sea",
-    "OperatorType": 0
+    "OperatorType": 1,
+    "IsRoot": true
   },
-  "testRule2": {
-    "Name": "testRule2",
-    "FirstArgumentName": "LowPrices",
-    "SecondArgumentName": "Antiques",
-    "OperatorType": 1
+  "test2": {
+    "Name": "test2",
+    "FirstArgumentName": "Antiques",
+    "SecondArgumentName": "Temperature",
+    "OperatorType": 2,
+    "IsRoot": false
+  },
+  "test3": {
+    "Name": "test5",
+    "FirstArgumentName": "Sea",
+    "SecondArgumentName": "Temperature",
+    "OperatorType": 1,
+    "IsRoot": false
   }
 }
