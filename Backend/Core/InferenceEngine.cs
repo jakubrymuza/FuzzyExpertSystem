@@ -72,7 +72,7 @@ namespace Backend.Core
 
         private static List<ITrip> LoadTrips()
         {
-            string fileName = "../../../KnowledgeBase/knowledgeBase.json";
+            string fileName = "../../../../Backend/KnowledgeBase/trips.json";
             string jsonString = System.IO.File.ReadAllText(fileName);
             System.Text.Json.Nodes.JsonArray rootObject = System.Text.Json.Nodes.JsonNode.Parse(jsonString)!.AsArray();
             string[] propertyNames = new string[]
