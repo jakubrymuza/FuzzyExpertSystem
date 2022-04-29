@@ -5,10 +5,12 @@ namespace Backend.Core.Trips
 {
     public class Trip : ITrip
     {
+        public string Name { get; }
         public Dictionary<string, IEvaluable> Records { get; }
 
-        public Trip(Dictionary<string, IEvaluable> records)
+        public Trip(string name, Dictionary<string, IEvaluable> records)
         {
+            Name = name;
             Records = records;
         }
 

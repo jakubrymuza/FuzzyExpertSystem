@@ -4,7 +4,6 @@ using Backend.Core.Trips;
 using System;
 using System.Collections.Generic;
 
-
 namespace Backend.Core
 {
     /// <summary>
@@ -71,9 +70,32 @@ namespace Backend.Core
             throw new NotImplementedException();
         }
 
-        private List<ITrip> LoadTrips()
+        private static List<ITrip> LoadTrips()
         {
-            throw new NotImplementedException();
+            string fileName = "../../../KnowledgeBase/knowledgeBase.json";
+            string jsonString = System.IO.File.ReadAllText(fileName);
+            System.Text.Json.Nodes.JsonArray rootObject = System.Text.Json.Nodes.JsonNode.Parse(jsonString)!.AsArray();
+            string[] propertyNames = new string[]
+            {
+                "Mountains",
+                "Sea",
+                "Temperature",
+                "Distance",
+                "Antiques",
+                "LowPrices"
+            };
+            List<ITrip> trips = new();
+            foreach (var item in rootObject)
+            {
+                Dictionary<string, IEvaluable> records = new();
+                for (int i = 0; i < propertyNames.Length; i++)
+                {
+                    string key1 = propertyNames[i];
+                    records.Add(key1, new Record(key1, (double)item!["Records"]![key1]!["Value"]!));
+                }
+                trips.Add(new Trip(item!["Name"]!.ToString(), records));
+            }
+            return trips;
         }
 
         private IEvaluable LoadRoot()

@@ -7,9 +7,9 @@
     public class Record : IEvaluable
     {
         public string Name { get; }
-        private readonly int Value;
+        private readonly double Value;
 
-        public Record(string name, int value)
+        public Record(string name, double value)
         {
             Name = name;
             Value = value;

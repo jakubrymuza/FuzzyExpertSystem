@@ -1,0 +1,408 @@
+[
+  {
+    "Name": "Poland",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.4
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.2
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.4
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.2
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.7
+      }
+    }
+  },
+  {
+    "Name": "Spain",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.3
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.7
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.8
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.4
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.2
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.4
+      }
+    }
+  },
+  {
+    "Name": "Greece",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.6
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.7
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.9
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.3
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.8
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.5
+      }
+    }
+  },
+  {
+    "Name": "Italy",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.6
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.7
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.7
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.3
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.8
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.4
+      }
+    }
+  },
+  {
+    "Name": "Turkey",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.6
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.5
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.7
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.5
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.5
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.8
+      }
+    }
+  },
+  {
+    "Name": "Germany",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.5
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.3
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.4
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.1
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.2
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.4
+      }
+    }
+  },
+  {
+    "Name": "France",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.7
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.5
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.6
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.2
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.4
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.3
+      }
+    }
+  },
+  {
+    "Name": "Czech Republic",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.4
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.4
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.1
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.2
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.6
+      }
+    }
+  },
+  {
+    "Name": "Switzerland",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.7
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.4
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.2
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.1
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.1
+      }
+    }
+  },
+  {
+    "Name": "Norway",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.5
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.5
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.2
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.2
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.1
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.2
+      }
+    }
+  },
+  {
+    "Name": "Australia",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.1
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.4
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.7
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.9
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.1
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.3
+      }
+    }
+  },
+  {
+    "Name": "Brazil",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0.1
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.6
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.9
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.8
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.2
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.7
+      }
+    }
+  },
+  {
+    "Name": "Egypt",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.7
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.9
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.6
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0.8
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.8
+      }
+    }
+  },
+  {
+    "Name": "Cyprus",
+    "Records": {
+      "Mountains": {
+        "Name": "Mountains",
+        "Value": 0
+      },
+      "Sea": {
+        "Name": "Sea",
+        "Value": 0.9
+      },
+      "Temperature": {
+        "Name": "Temperature",
+        "Value": 0.9
+      },
+      "Distance": {
+        "Name": "Distance",
+        "Value": 0.5
+      },
+      "Antiques": {
+        "Name": "Antiques",
+        "Value": 0
+      },
+      "LowPrices": {
+        "Name": "LowPrices",
+        "Value": 0.5
+      }
+    }
+  }
+]
