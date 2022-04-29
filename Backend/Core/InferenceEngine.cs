@@ -1,7 +1,9 @@
 ﻿using Backend.Auxiliary;
+using Backend.Core.CalculatingEngines;
 using Backend.Core.Evaluables;
 using Backend.Core.Trips;
 using System;
+using System.Text.Json;
 using System.Collections.Generic;
 
 namespace Backend.Core
@@ -19,6 +21,9 @@ namespace Backend.Core
         private readonly IEvaluable _RootEvaluable;
 
         private readonly List<ITrip> _Trips;
+
+        private static readonly string RULES_PATH = "../../../../Backend/KnowledgeBase/rules.json";
+        private static readonly string TRIPS_PATH = "../../../../Backend/KnowledgeBase/trips.json";
 
         public static InferenceEngine GetInstance()
         {
@@ -60,9 +65,37 @@ namespace Backend.Core
             _RootEvaluable = LoadRoot();
         }
 
-        private Dictionary<string, IEvaluable> LoadRules()
+        public void AddRule(string firstColumn, OperatorType operatorType, string secondColumn, string ruleName)
         {
-            throw new NotImplementedException();
+            _Rules.TryAdd(ruleName, new Rule(ruleName, firstColumn, secondColumn, operatorType));
+            SaveRules();
+        }
+
+        public void RemoveRule(string key)
+        {
+            _Rules.Remove(key);
+            SaveRules();
+        }
+
+        public void SaveRules()
+        {
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string jsonString = JsonSerializer.Serialize(_Rules, options);
+            System.IO.File.WriteAllText(RULES_PATH, jsonString);
+        }
+
+        private static Dictionary<string, IEvaluable> LoadRules()
+        {
+            string jsonString = System.IO.File.ReadAllText(RULES_PATH);
+            System.Text.Json.Nodes.JsonObject rootObject = System.Text.Json.Nodes.JsonNode.Parse(jsonString)!.AsObject();
+            Dictionary<string, IEvaluable> rules = new();
+            foreach (var rule in rootObject)
+            {
+                rules.Add(rule.Key, new Rule(rule.Key, rule.Value!["FirstArgumentName"]!.ToString(), 
+                    rule.Value!["SecondArgumentName"]!.ToString(),
+                    (OperatorType)(int)rule!.Value!["OperatorType"]!));
+            }
+            return rules;
         }
 
         private Dictionary<string, IEvaluable> LoadQuizAnswers()
@@ -72,8 +105,7 @@ namespace Backend.Core
 
         private static List<ITrip> LoadTrips()
         {
-            string fileName = "../../../../Backend/KnowledgeBase/trips.json";
-            string jsonString = System.IO.File.ReadAllText(fileName);
+            string jsonString = System.IO.File.ReadAllText(TRIPS_PATH);
             System.Text.Json.Nodes.JsonArray rootObject = System.Text.Json.Nodes.JsonNode.Parse(jsonString)!.AsArray();
             string[] propertyNames = new string[]
             {

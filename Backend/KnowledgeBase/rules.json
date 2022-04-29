@@ -1,0 +1,14 @@
+{
+  "testRule": {
+    "Name": "testRule",
+    "FirstArgumentName": "Mountains",
+    "SecondArgumentName": "Sea",
+    "OperatorType": 0
+  },
+  "testRule2": {
+    "Name": "testRule2",
+    "FirstArgumentName": "LowPrices",
+    "SecondArgumentName": "Antiques",
+    "OperatorType": 1
+  }
+}
