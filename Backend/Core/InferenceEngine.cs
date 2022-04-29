@@ -80,7 +80,13 @@ namespace Backend.Core
         public void SaveRules()
         {
             var options = new JsonSerializerOptions { WriteIndented = true };
-            string jsonString = JsonSerializer.Serialize(_Rules, options);
+            // The following code is necessary to serialize all properties from Rule class
+            Dictionary<string, Rule> _Rules2 = new();
+            foreach (var rule in _Rules)
+            {
+                _Rules2.Add(rule.Key, (Rule)rule.Value);
+            }
+            string jsonString = JsonSerializer.Serialize(_Rules2, options);
             System.IO.File.WriteAllText(RULES_PATH, jsonString);
         }
 
