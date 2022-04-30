@@ -12,13 +12,14 @@ namespace Backend.Core.Evaluables
         public string FirstArgumentName { get; }
         public string SecondArgumentName { get; }
         public OperatorType OperatorType { get; }
-
-        public Rule(string name, string firstArgumentName, string secondArgumentName, OperatorType operatorType)
+        public bool IsRoot { get; }
+        public Rule(string name, string firstArgumentName, string secondArgumentName, OperatorType operatorType, bool isRoot)
         {
             Name = name;
             FirstArgumentName = firstArgumentName;
             SecondArgumentName = secondArgumentName;
             OperatorType = operatorType;
+            IsRoot = isRoot;
         }
 
         public double Evaluate() => Evaluate(new LukasiewiczCalculatingEngine());

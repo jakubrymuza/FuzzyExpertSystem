@@ -1,7 +1,9 @@
 ﻿using Backend.Auxiliary;
+using Backend.Core.CalculatingEngines;
 using Backend.Core.Evaluables;
 using Backend.Core.Trips;
 using System;
+using System.Text.Json;
 using System.Collections.Generic;
 
 namespace Backend.Core
@@ -16,9 +18,12 @@ namespace Backend.Core
         private Dictionary<string, IEvaluable>? _Evaluables;
         private readonly Dictionary<string, IEvaluable> _Rules;
         private readonly Dictionary<string, IEvaluable> _QuizAnswers;
-        private readonly IEvaluable _RootEvaluable;
+        private IEvaluable _RootEvaluable;
 
         private readonly List<ITrip> _Trips;
+
+        private static readonly string RULES_PATH = "../../../../Backend/KnowledgeBase/rules.json";
+        private static readonly string TRIPS_PATH = "../../../../Backend/KnowledgeBase/trips.json";
 
         public static InferenceEngine GetInstance()
         {
@@ -60,9 +65,48 @@ namespace Backend.Core
             _RootEvaluable = LoadRoot();
         }
 
+        public void AddRule(string firstColumn, OperatorType operatorType, string secondColumn, string ruleName, bool isRoot)
+        {
+            Rule rule = new(ruleName, firstColumn, secondColumn, operatorType, isRoot);
+            _Rules.TryAdd(ruleName, rule);
+            if (isRoot) _RootEvaluable = rule; 
+            SaveRules();
+        }
+
+        public void RemoveRule(string key)
+        {
+            _Rules.Remove(key);
+            SaveRules();
+        }
+
+        private void SaveRules()
+        {
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            // The following code is necessary to serialize all properties from Rule class
+            Dictionary<string, Rule> _Rules2 = new();
+            foreach (var rule in _Rules)
+            {
+                _Rules2.Add(rule.Key, (Rule)rule.Value);
+            }
+            string jsonString = JsonSerializer.Serialize(_Rules2, options);
+            System.IO.File.WriteAllText(RULES_PATH, jsonString);
+        }
+
         private Dictionary<string, IEvaluable> LoadRules()
         {
-            throw new NotImplementedException();
+            string jsonString = System.IO.File.ReadAllText(RULES_PATH);
+            System.Text.Json.Nodes.JsonObject rootObject = System.Text.Json.Nodes.JsonNode.Parse(jsonString)!.AsObject();
+            Dictionary<string, IEvaluable> rules = new();
+            foreach (var rule in rootObject)
+            {
+                Rule newRule = new Rule(rule.Key, rule.Value!["FirstArgumentName"]!.ToString(),
+                    rule.Value!["SecondArgumentName"]!.ToString(),
+                    (OperatorType)(int)rule!.Value!["OperatorType"]!,
+                    (bool)rule!.Value!["IsRoot"]!);
+                rules.Add(rule.Key, newRule);
+                if (newRule.IsRoot) _RootEvaluable = newRule;
+            }
+            return rules;
         }
 
         private Dictionary<string, IEvaluable> LoadQuizAnswers()
@@ -70,10 +114,9 @@ namespace Backend.Core
             throw new NotImplementedException();
         }
 
-        private static List<ITrip> LoadTrips()
+        private List<ITrip> LoadTrips()
         {
-            string fileName = "../../../../Backend/KnowledgeBase/trips.json";
-            string jsonString = System.IO.File.ReadAllText(fileName);
+            string jsonString = System.IO.File.ReadAllText(TRIPS_PATH);
             System.Text.Json.Nodes.JsonArray rootObject = System.Text.Json.Nodes.JsonNode.Parse(jsonString)!.AsArray();
             string[] propertyNames = new string[]
             {
@@ -100,7 +143,8 @@ namespace Backend.Core
 
         private IEvaluable LoadRoot()
         {
-            throw new NotImplementedException();
+            if (_RootEvaluable == null) throw new Exception("No root evaluable set.");
+            return _RootEvaluable;
         }
     }
 }
