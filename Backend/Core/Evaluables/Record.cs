@@ -1,4 +1,5 @@
 ﻿using Backend.Core.QuizAnswers;
+using Backend.Core.Fuzzification;
 
 namespace Backend.Core.Evaluables
 {
@@ -21,8 +22,16 @@ namespace Backend.Core.Evaluables
         {
             Name = quizAnswer.Name;
 
-            // TODO: Convert
-            Value = quizAnswer.CrispValue;
+            var fuzzificator = new LinearFuzzificator(1, 10);
+
+            Value = fuzzificator.Fuzzify(quizAnswer.CrispValue);
+        }
+
+        public Record(IQuizAnswer quizAnswer, IFuzzificator fuzzificator)
+        {
+            Name = quizAnswer.Name;
+
+            Value = fuzzificator.Fuzzify(quizAnswer.CrispValue);
         }
 
         public double Evaluate() => Value;
