@@ -1,4 +1,6 @@
-﻿namespace Backend.Core.Evaluables
+﻿using Backend.Core.QuizAnswers;
+
+namespace Backend.Core.Evaluables
 {
 
     /// <summary>
@@ -13,6 +15,14 @@
         {
             Name = name;
             Value = value;
+        }
+
+        public Record(IQuizAnswer quizAnswer)
+        {
+            Name = quizAnswer.Name;
+
+            // TODO: Convert
+            Value = quizAnswer.CrispValue;
         }
 
         public double Evaluate() => Value;

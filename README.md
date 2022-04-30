@@ -3,6 +3,6 @@ Expert system for travel agency using fuzzy sets.
 
 Authors:
 - Jakub Rymuza - backend core
-- Mateusz Szymczak - backend api and data persistence
+- Mateusz Szymczak - data persistence and test data
 - Rafał Sosnowski - expert app
 - Karol Nowiński - client app

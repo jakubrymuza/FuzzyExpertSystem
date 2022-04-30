@@ -2,7 +2,7 @@
 
 namespace Backend.Auxiliary
 {
-    public static class DictionaryExtender
+    internal static class DictionaryExtender
     {
         /// <summary>
         /// merges dictionaries
