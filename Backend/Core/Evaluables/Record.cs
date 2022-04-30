@@ -1,4 +1,7 @@
-﻿namespace Backend.Core.Evaluables
+﻿using Backend.Core.QuizAnswers;
+using Backend.Core.Fuzzification;
+
+namespace Backend.Core.Evaluables
 {
 
     /// <summary>
@@ -13,6 +16,22 @@
         {
             Name = name;
             Value = value;
+        }
+
+        public Record(IQuizAnswer quizAnswer)
+        {
+            Name = quizAnswer.Name;
+
+            var fuzzificator = new LinearFuzzificator(1, 10);
+
+            Value = fuzzificator.Fuzzify(quizAnswer.CrispValue);
+        }
+
+        public Record(IQuizAnswer quizAnswer, IFuzzificator fuzzificator)
+        {
+            Name = quizAnswer.Name;
+
+            Value = fuzzificator.Fuzzify(quizAnswer.CrispValue);
         }
 
         public double Evaluate() => Value;

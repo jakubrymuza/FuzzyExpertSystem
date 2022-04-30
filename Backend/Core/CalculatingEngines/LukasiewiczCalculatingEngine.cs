@@ -5,7 +5,7 @@ namespace Backend.Core.CalculatingEngines
     /// <summary>
     /// contains Lukasiewicz fuzzy operations
     /// </summary>
-    public class LukasiewiczCalculatingEngine : ICalculatingEngine
+    internal class LukasiewiczCalculatingEngine : ICalculatingEngine
     {
         public double EvaluateTNorm(double x, double y) =>
             Math.Max(0, x + y - 1);

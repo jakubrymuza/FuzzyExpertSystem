@@ -22,7 +22,7 @@ namespace Backend.Core.Evaluables
             IsRoot = isRoot;
         }
 
-        public double Evaluate() => Evaluate(new LukasiewiczCalculatingEngine());
+        public double Evaluate() => Evaluate();
 
         public double Evaluate(ICalculatingEngine calculatingEngine)
         {
@@ -35,7 +35,7 @@ namespace Backend.Core.Evaluables
                 OperatorType.TNorm => calculatingEngine.EvaluateTNorm(arg1, arg2),
                 OperatorType.TConorm => calculatingEngine.EvaluateTConorm(arg1, arg2),
                 OperatorType.Implication => calculatingEngine.EvaluateImplication(arg1, arg2),
-                _ => throw new OperatorNotImplementedException(),
+                _ => throw new OperatorNotImplementedException(OperatorType.ToString()),
             };
         }
 
