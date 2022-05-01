@@ -62,7 +62,32 @@ namespace Backend.Core
         /// <summary>
         /// returns column names of trips' fuzzy description
         /// </summary>
-        public string[] GetTripsColumnsNames() => _PropertyNames;
+        public string[] GetTrips() => _PropertyNames;
+
+
+        /// <summary>
+        /// returns rules
+        /// </summary>
+        public List<IEvaluable> GetRuleNames()
+        {
+            List<IEvaluable> result = new List<IEvaluable>();
+
+            foreach (var rule in _Rules)
+                result.Add(rule.Value);
+
+            return result;
+        }
+
+        /// <summary>
+        /// sets new root
+        /// </summary>
+        public void SetNewRoot(string name)
+        {
+            ((Rule)_RootEvaluable!).IsRoot = false;
+            Rule newRoot = (Rule)FindEvaluable(name);
+            newRoot.IsRoot = true;
+            _RootEvaluable = newRoot;
+        }
 
         // ------- PRIVATE FIELDS ----------
 
