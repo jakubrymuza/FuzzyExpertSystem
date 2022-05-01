@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Góry",
+    "Description": "Jak bardzo chcesz jechać w góry?"
+  },
+  {
+    "Name": "Morze",
+    "Description": "Jak bardzo chcesz jechać nad morze?"
+  },
+  {
+    "Name": "Temperatura",
+    "Description": "Jaka jest Twoja oczekiwana temperatura (im wyższa wartość tym większa)?"
+  },
+  {
+    "Name": "Odległość",
+    "Description": "Jak daleko chcesz jechać? (im wyższa wartość tym dalej)"
+  },
+  {
+    "Name": "Zabytki",
+    "Description": "Jak ważne jest dla Ciebie zwiedzanie zabytków?"
+  },
+  {
+    "Name": "NiskieCeny",
+    "Description": "Jak ważne dla Ciebie są niskie ceny na miejscu?"
+  }
+]

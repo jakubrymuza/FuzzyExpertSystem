@@ -2,6 +2,7 @@
 using Backend.Core.CalculatingEngines;
 using Backend.Core.Evaluables;
 using Backend.Core.QuizAnswers;
+using Backend.Core.QuizQuestions;
 using Backend.Core.Trips;
 using Backend.Exceptions;
 using System.Collections.Generic;
@@ -92,11 +93,12 @@ namespace Backend.Core
         /// <summary>
         /// return questions names
         /// </summary>
-        public List<string> GetQuestions()
+        internal List<QuizQuestion> GetQuestions()
         {
-            // TODO!
-            return new List<string>();
+            string jsonString = System.IO.File.ReadAllText(_RulesPath);
+            return JsonSerializer.Deserialize<List<QuizQuestion>>(jsonString)!;
         }
+        
 
         // ------- PRIVATE FIELDS ----------
 
@@ -112,6 +114,7 @@ namespace Backend.Core
 
         private static readonly string _RulesPath = "../../../../Backend/KnowledgeBase/rules.json";
         private static readonly string _TripsPath = "../../../../Backend/KnowledgeBase/trips.json";
+        private static readonly string _QuestionsPath = "../../../../Backend/KnowledgeBase/questions.json";
         private static readonly string[] _PropertyNames = new string[]
             {
                 "Mountains",
