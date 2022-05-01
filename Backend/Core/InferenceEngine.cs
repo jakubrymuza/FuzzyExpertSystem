@@ -59,6 +59,11 @@ namespace Backend.Core
             SaveRules();
         }
 
+        /// <summary>
+        /// returns column names of trips' fuzzy description
+        /// </summary>
+        public string[] GetTripsColumnsNames() => _PropertyNames;
+
         // ------- PRIVATE FIELDS ----------
 
         private static InferenceEngine? _Instance;

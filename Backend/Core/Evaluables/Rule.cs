@@ -22,7 +22,7 @@ namespace Backend.Core.Evaluables
             IsRoot = isRoot;
         }
 
-        public double Evaluate() => Evaluate();
+        public double Evaluate() => Evaluate(new LukasiewiczCalculatingEngine());
 
         public double Evaluate(ICalculatingEngine calculatingEngine)
         {
