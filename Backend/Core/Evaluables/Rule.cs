@@ -12,7 +12,7 @@ namespace Backend.Core.Evaluables
         public string FirstArgumentName { get; }
         public string SecondArgumentName { get; }
         public OperatorType OperatorType { get; }
-        public bool IsRoot { get; }
+        public bool IsRoot { get; set; }
         public Rule(string name, string firstArgumentName, string secondArgumentName, OperatorType operatorType, bool isRoot)
         {
             Name = name;
