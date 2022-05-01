@@ -89,6 +89,15 @@ namespace Backend.Core
             _RootEvaluable = newRoot;
         }
 
+        /// <summary>
+        /// return questions names
+        /// </summary>
+        public List<string> GetQuestions()
+        {
+            // TODO!
+            return new List<string>();
+        }
+
         // ------- PRIVATE FIELDS ----------
 
         private static InferenceEngine? _Instance;
