@@ -1,6 +1,6 @@
 ﻿namespace Backend.Core.QuizQuestions
 {
-    internal class QuizQuestion
+    public class QuizQuestion
     {
         public string Name { get; }
         public string Description { get; }
