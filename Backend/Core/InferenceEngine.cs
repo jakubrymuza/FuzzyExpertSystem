@@ -95,7 +95,7 @@ namespace Backend.Core
         /// </summary>
         internal List<QuizQuestion> GetQuestions()
         {
-            string jsonString = System.IO.File.ReadAllText(_RulesPath);
+            string jsonString = System.IO.File.ReadAllText(_QuestionsPath);
             return JsonSerializer.Deserialize<List<QuizQuestion>>(jsonString)!;
         }
         
