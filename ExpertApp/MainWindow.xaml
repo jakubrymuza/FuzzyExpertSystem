@@ -7,61 +7,86 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="29*"/>
-                <RowDefinition Height="378*"/>
-                <RowDefinition Height="27*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="30*"/>
-                <ColumnDefinition Width="733*"/>
-                <ColumnDefinition Width="37*"/>
-            </Grid.ColumnDefinitions>
-            <Grid  Grid.Column="1"  Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <GroupBox Grid.Row="0" Grid.Column="0" Header="First Preference">
-                    <ListBox Name="FirstPreference"/>
-                </GroupBox>
-                <GroupBox Grid.Row="0" Grid.Column="1" Header="Process Method">
-                    <ListBox Name="ProcessMethod"/>
-                </GroupBox>
-                <GroupBox Grid.Row="0" Grid.Column="2" Header="Second Preference">
-                    <ListBox Name="SecondPreference"/>
-                </GroupBox>
-                <Grid Grid.Row="0" Grid.Column="3">
+        <TabControl>
+            <TabItem Header="Add Rule">
+                <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="140*"/>
-                        <RowDefinition Height="47*"/>
-                        <RowDefinition Height="191*"/>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="378*"/>
+                        <RowDefinition Height="27*"/>
                     </Grid.RowDefinitions>
-                    <GroupBox Header="New Preference Name" Margin="0,126,0,0" Grid.RowSpan="2">
-                        <TextBox Name="NewPreferenceName"/>
-                    </GroupBox>
-                    <Grid Grid.Row="2" Margin="0,14,0,0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="33*"/>
-                            <RowDefinition Height="128*"/>
-                        </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*"/>
+                        <ColumnDefinition Width="733*"/>
+                        <ColumnDefinition Width="37*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid  Grid.Column="1"  Grid.Row="1">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="91*"/>
-                            <ColumnDefinition Width="92*"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Row="0" Grid.Column="1" Content="Save" Name="SaveButton" Click="Save" />
+                        <GroupBox Grid.Row="0" Grid.Column="0" Header="First Preference">
+                            <ListBox Name="FirstPreference"/>
+                        </GroupBox>
+                        <GroupBox Grid.Row="0" Grid.Column="1" Header="Process Method">
+                            <ListBox Name="ProcessMethod"/>
+                        </GroupBox>
+                        <GroupBox Grid.Row="0" Grid.Column="2" Header="Second Preference">
+                            <ListBox Name="SecondPreference"/>
+                        </GroupBox>
+                        <Grid Grid.Row="0" Grid.Column="3">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="140*"/>
+                                <RowDefinition Height="47*"/>
+                                <RowDefinition Height="191*"/>
+                            </Grid.RowDefinitions>
+                            <GroupBox Header="New Preference Name" Margin="0,126,0,0" Grid.RowSpan="2">
+                                <TextBox Name="NewPreferenceName"/>
+                            </GroupBox>
+                            <Grid Grid.Row="2" Margin="0,14,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="33*"/>
+                                    <RowDefinition Height="128*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="91*"/>
+                                    <ColumnDefinition Width="92*"/>
+                                </Grid.ColumnDefinitions>
+                                <Button Grid.Row="0" Grid.Column="1" Content="Save" Name="SaveButton" Click="Save" />
+                            </Grid>
+
+                        </Grid>
                     </Grid>
-
                 </Grid>
-            </Grid>
+            </TabItem>
+            <TabItem Header="RemoveRule">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Grid.Row="0" Grid.Column="1" Header="Rules">
+                        <ListBox Name="RulesToEdit" SelectionMode="Single"/>
+                    </GroupBox>
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="173*"/>
+                            <RowDefinition Height="43*"/>
+                            <RowDefinition Height="43*"/>
+                            <RowDefinition Height="43*"/>
+                            <RowDefinition Height="190*"/>
 
-        </Grid>
-        
+                        </Grid.RowDefinitions>
+                        <Button Grid.Row="1" Content="Remove" Name="RemoveButton" Click="RemoveButton_Click" />
+                        <TextBlock Grid.Row="2" Name="CurrentRoot"/>
+                        <Button Grid.Row="3" Content="Set as root" Name="RootButton" Click="RootButton_Click" />
+                    </Grid>
+                </Grid>
 
-
-
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
