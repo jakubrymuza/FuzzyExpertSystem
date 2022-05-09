@@ -1,7 +1,6 @@
 ﻿using Backend.Core;
 using Backend.Core.CalculatingEngines;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 
@@ -11,8 +10,8 @@ namespace ExpertApp
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {        
-        InferenceEngine engine; 
+    {
+        InferenceEngine engine;
         public MainWindow()
         {
             InitializeComponent();
@@ -24,14 +23,14 @@ namespace ExpertApp
             this.RulesToEdit.SelectedIndex = 0;
 
             this.ProcessMethod.ItemsSource = Enum.GetValues(typeof(OperatorType)).Cast<OperatorType>();
-            
+
         }
         private void Save(object sender, RoutedEventArgs e)
         {
 
             if (NewPreferenceName.Text == "")
             {
-                MessageBox.Show(this, "Nie podano nazwy reguły","Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(this, "Nie podano nazwy reguły", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else
             {
@@ -52,8 +51,8 @@ namespace ExpertApp
         }
         private void RefreshAllRulesLists()
         {
-            var Preferences = engine.GetRuleNames().Select(x => x.Name);
-            var Rules = engine.GetRuleNames().Select(x => x.Name);
+            var Preferences = engine.GetRules().Select(x => x.Name);
+            var Rules = engine.GetRules().Select(x => x.Name);
             this.FirstPreference.ItemsSource = Preferences;
             this.SecondPreference.ItemsSource = Preferences;
             this.RulesToEdit.ItemsSource = Rules;
@@ -64,9 +63,9 @@ namespace ExpertApp
         private void SetRoot(string name)
         {
             //engine.SetNewRoot(name);
-            CurrentRoot.Text=name;
+            CurrentRoot.Text = name;
         }
 
-        
+
     }
 }

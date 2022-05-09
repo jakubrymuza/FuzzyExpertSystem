@@ -1,5 +1,5 @@
-﻿using Backend.Core.QuizAnswers;
-using Backend.Core.Fuzzification;
+﻿using Backend.Core.Fuzzification;
+using Backend.Core.QuizAnswers;
 
 namespace Backend.Core.Evaluables
 {
