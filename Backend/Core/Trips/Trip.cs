@@ -6,17 +6,15 @@ namespace Backend.Core.Trips
     public class Trip : ITrip
     {
         public string Name { get; }
-        public Dictionary<string, IEvaluable> Records { get; }
+
+        public Dictionary<string, IEvaluable> Records => _Records;
+
+        public Dictionary<string, IEvaluable> _Records;
 
         public Trip(string name, Dictionary<string, IEvaluable> records)
         {
             Name = name;
-            Records = records;
-        }
-
-        public Trip()
-        {
-            throw new System.NotImplementedException();
+            _Records = records;
         }
     }
 }
