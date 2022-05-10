@@ -1,5 +1,6 @@
 ﻿using Backend.Core;
 using Backend.Core.CalculatingEngines;
+using Backend.Data;
 using System;
 using System.Linq;
 using System.Windows;
@@ -12,10 +13,13 @@ namespace ExpertApp
     public partial class MainWindow : Window
     {
         InferenceEngine engine;
+        KnowledgeBase knowledgeBase;
+
         public MainWindow()
         {
             InitializeComponent();
             engine = InferenceEngine.GetInstance();
+            knowledgeBase = KnowledgeBase.GetInstance();
             RefreshAllRulesLists();
             this.FirstPreference.SelectedIndex = 0;
             this.ProcessMethod.SelectedIndex = 0;
@@ -34,7 +38,7 @@ namespace ExpertApp
             }
             else
             {
-                engine.AddRule(new Backend.Core.Evaluables.Rule(NewPreferenceName.Text, (string)FirstPreference.SelectedItem, (string)SecondPreference.SelectedItem, (OperatorType)ProcessMethod.SelectedItem, false));
+                knowledgeBase.AddRule(new Backend.Core.Evaluables.Rule(NewPreferenceName.Text, (string)FirstPreference.SelectedItem, (string)SecondPreference.SelectedItem, (OperatorType)ProcessMethod.SelectedItem, false));
                 SetRoot(NewPreferenceName.Text);
                 RefreshAllRulesLists();
             }
@@ -42,7 +46,7 @@ namespace ExpertApp
 
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
-            engine.RemoveRule((string)this.RulesToEdit.SelectedItem);
+            knowledgeBase.RemoveRule((string)this.RulesToEdit.SelectedItem);
             RefreshAllRulesLists();
         }
         private void RootButton_Click(object sender, RoutedEventArgs e)
@@ -51,8 +55,8 @@ namespace ExpertApp
         }
         private void RefreshAllRulesLists()
         {
-            var Preferences = engine.GetRules().Select(x => x.Name);
-            var Rules = engine.GetRules().Select(x => x.Name);
+            var Preferences = knowledgeBase.GetRules().Select(x => x.Name);
+            var Rules = knowledgeBase.GetRules().Select(x => x.Name);
             this.FirstPreference.ItemsSource = Preferences;
             this.SecondPreference.ItemsSource = Preferences;
             this.RulesToEdit.ItemsSource = Rules;
