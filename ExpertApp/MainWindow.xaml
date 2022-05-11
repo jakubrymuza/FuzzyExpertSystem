@@ -76,13 +76,24 @@
                             <RowDefinition Height="173*"/>
                             <RowDefinition Height="43*"/>
                             <RowDefinition Height="43*"/>
-                            <RowDefinition Height="43*"/>
                             <RowDefinition Height="190*"/>
 
                         </Grid.RowDefinitions>
-                        <Button Grid.Row="1" Content="Remove" Name="RemoveButton" Click="RemoveButton_Click" />
-                        <TextBlock Grid.Row="2" Name="CurrentRoot"/>
-                        <Button Grid.Row="3" Content="Set as root" Name="RootButton" Click="RootButton_Click" />
+                        <GroupBox Grid.Row="1" Header="Current Root">
+                            <TextBlock  Name="CurrentRoot"/>
+                        </GroupBox>
+                        <Grid Grid.Row="1" Margin="0,39,0,10" Grid.RowSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="54*"/>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="100*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="1" Content="Remove" Name="RemoveButton" Click="RemoveButton_Click" Margin="10,0,93,0" Grid.ColumnSpan="2" />
+                            <Button Grid.Column="2" Content="Set as root" Name="RootButton" Click="RootButton_Click" Margin="14,0,0,0" />
+
+
+                        </Grid>
+
                     </Grid>
                 </Grid>
 

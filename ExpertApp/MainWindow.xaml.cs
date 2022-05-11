@@ -2,6 +2,7 @@
 using Backend.Core.CalculatingEngines;
 using Backend.Data;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 
@@ -25,7 +26,7 @@ namespace ExpertApp
             this.ProcessMethod.SelectedIndex = 0;
             this.SecondPreference.SelectedIndex = 0;
             this.RulesToEdit.SelectedIndex = 0;
-
+            CurrentRoot.Text = knowledgeBase.GetRoot().Name;
             this.ProcessMethod.ItemsSource = Enum.GetValues(typeof(OperatorType)).Cast<OperatorType>();
 
         }
@@ -55,7 +56,7 @@ namespace ExpertApp
         }
         private void RefreshAllRulesLists()
         {
-            var Preferences = knowledgeBase.GetRules().Select(x => x.Name);
+            var Preferences = GetPreferences();
             var Rules = knowledgeBase.GetRules().Select(x => x.Name);
             this.FirstPreference.ItemsSource = Preferences;
             this.SecondPreference.ItemsSource = Preferences;
@@ -64,10 +65,17 @@ namespace ExpertApp
             this.SecondPreference.Items.Refresh();
             this.RulesToEdit.Items.Refresh();
         }
+        private IEnumerable<string> GetPreferences()
+        {
+            var Preferences = knowledgeBase.GetRules().Select(x => x.Name).ToList();
+            Preferences.AddRange(knowledgeBase.GetQuestions().Select(x => x.Name));
+            Preferences.AddRange(knowledgeBase.GetTrips());
+            return Preferences;
+        }
         private void SetRoot(string name)
         {
-            //engine.SetNewRoot(name);
-            CurrentRoot.Text = name;
+            knowledgeBase.SetNewRoot(name);
+            CurrentRoot.Text = knowledgeBase.GetRoot().Name;
         }
 
 
