@@ -66,7 +66,7 @@ namespace ExpertApp
         }
         private void SetRoot(string name)
         {
-            //engine.SetNewRoot(name);
+            knowledgeBase.SetNewRoot(name);
             CurrentRoot.Text = name;
         }
 
