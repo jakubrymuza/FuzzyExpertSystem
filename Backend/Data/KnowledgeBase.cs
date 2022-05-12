@@ -85,6 +85,7 @@ namespace Backend.Data
             Rule newRoot = (Rule)_Rules[name];
             newRoot.IsRoot = true;
             _RootEvaluable = newRoot;
+            SaveRules();
         }
 
         /// <summary>
