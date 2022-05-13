@@ -72,6 +72,7 @@ namespace Backend.Core
             var tripWithWeightL = new List<IWeightedTrip>(tripWithWeight);
 
             tripWithWeightL.Sort();
+            tripWithWeightL.Reverse();
 
             var results = new List<ITrip>();
 
