@@ -2,7 +2,6 @@
 using Backend.Core.Evaluables;
 using Backend.Core.QuizAnswers;
 using Backend.Core.Trips;
-using Backend.Data;
 using Backend.Exceptions;
 using System.Collections.Generic;
 
@@ -65,17 +64,20 @@ namespace Backend.Core
         private List<ITrip> SortTrips(double[] weights)
         {
             var trips = _KnowledgeBase.GetTripsList();
-            var tripWithWeight = new List<(double, ITrip)>(trips.Count);
+            var tripWithWeight = new WeightedTrip[trips.Count];
 
-            for (int i = 0; i < tripWithWeight.Count; ++i)
-                tripWithWeight[i] = (weights[i], trips[i]);
+            for (int i = 0; i < tripWithWeight.Length; ++i)
+                tripWithWeight[i] = new WeightedTrip(trips[i], weights[i]);
 
-            tripWithWeight.Sort();
+            var tripWithWeightL = new List<IWeightedTrip>(tripWithWeight);
+
+            tripWithWeightL.Sort();
 
             var results = new List<ITrip>();
 
-            foreach (var obj in tripWithWeight)
-                results.Add(obj.Item2);
+            foreach (var wtrip in tripWithWeightL)
+                results.Add(wtrip.Trip);
+
             return results;
         }
 
@@ -94,7 +96,7 @@ namespace Backend.Core
         {
             var tripData = trip.Records;
 
-            _Evaluables = new Dictionary<string, IEvaluable>(_KnowledgeBase.GetRulesDict());
+            _Evaluables.Clear();
             _Evaluables.Merge(_QuizAnswers);
             _Evaluables.Merge(tripData);
 
@@ -103,6 +105,8 @@ namespace Backend.Core
 
         private void SetAnswers(List<IQuizAnswer> quizAnswers)
         {
+            _QuizAnswers.Clear();
+
             foreach (var answer in quizAnswers)
                 _QuizAnswers.Add(answer.Name, new Record(answer));
         }

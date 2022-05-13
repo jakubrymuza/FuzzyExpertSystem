@@ -1,14 +1,13 @@
-﻿using Backend.Core.CalculatingEngines;
+using Backend.Core.CalculatingEngines;
 using Backend.Core.Evaluables;
 using Backend.Core.QuizQuestions;
 using Backend.Core.Trips;
 using Backend.Exceptions;
 using System.Collections.Generic;
 using System.Text.Json;
-using System;
 
 
-namespace Backend.Data
+namespace Backend.Core
 {
     public class KnowledgeBase
     {
