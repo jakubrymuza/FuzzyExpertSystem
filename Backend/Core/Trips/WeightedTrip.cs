@@ -1,13 +1,14 @@
-﻿namespace Backend.Core.Trips
+﻿using System.Collections.Generic;
+using Backend.Core.Evaluables;
+
+namespace Backend.Core.Trips
 {
-    public class WeightedTrip : IWeightedTrip
+    public class WeightedTrip : Trip, IWeightedTrip
     {
-        public ITrip Trip { get; }
         public double Weight { get; }
 
-        public WeightedTrip(ITrip trip, double weight)
+        public WeightedTrip(string name, Dictionary<string, IEvaluable> records, double weight) : base(name, records)
         {
-            Trip = trip;
             Weight = weight;
         }
 

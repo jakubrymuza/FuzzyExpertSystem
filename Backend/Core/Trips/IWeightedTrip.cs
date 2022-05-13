@@ -2,9 +2,8 @@
 
 namespace Backend.Core.Trips
 {
-    public interface IWeightedTrip : IComparable<IWeightedTrip>
+    public interface IWeightedTrip : IComparable<IWeightedTrip>, ITrip
     {
-        public ITrip Trip { get; }
         public double Weight { get; }
     }
 }

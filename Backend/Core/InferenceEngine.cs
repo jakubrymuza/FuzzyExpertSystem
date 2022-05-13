@@ -28,7 +28,7 @@ namespace Backend.Core
         /// <summary>
         /// returns trips sorted in accordance to rules from knowledge base and quiz answers
         /// </summary>
-        public List<ITrip> GetSortedTrips(List<IQuizAnswer> quizAnswers)
+        public List<IWeightedTrip> GetSortedTrips(List<IQuizAnswer> quizAnswers)
         {
             SetAnswers(quizAnswers);
 
@@ -61,25 +61,20 @@ namespace Backend.Core
             _Evaluables = new();
         }
 
-        private List<ITrip> SortTrips(double[] weights)
+        private List<IWeightedTrip> SortTrips(double[] weights)
         {
             var trips = _KnowledgeBase.GetTripsList();
             var tripWithWeight = new WeightedTrip[trips.Count];
 
             for (int i = 0; i < tripWithWeight.Length; ++i)
-                tripWithWeight[i] = new WeightedTrip(trips[i], weights[i]);
+                tripWithWeight[i] = new WeightedTrip(((Trip)trips[i]).Name, trips[i].Records, weights[i]);
 
             var tripWithWeightL = new List<IWeightedTrip>(tripWithWeight);
 
             tripWithWeightL.Sort();
             tripWithWeightL.Reverse();
 
-            var results = new List<ITrip>();
-
-            foreach (var wtrip in tripWithWeightL)
-                results.Add(wtrip.Trip);
-
-            return results;
+            return tripWithWeightL;
         }
 
         private double[] CalculateWeights()
