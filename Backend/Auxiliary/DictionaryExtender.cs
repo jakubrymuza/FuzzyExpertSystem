@@ -7,7 +7,7 @@ namespace Backend.Auxiliary
         /// <summary>
         /// merges dictionaries
         /// </summary>
-        public static Dictionary<TKey, TValue> Merge<TKey, TValue>(
+        internal static Dictionary<TKey, TValue> Merge<TKey, TValue>(
             this Dictionary<TKey, TValue> src,
             Dictionary<TKey, TValue> arg)
             where TKey : notnull

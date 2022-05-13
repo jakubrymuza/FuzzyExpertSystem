@@ -1,11 +1,8 @@
-﻿using System.Windows;
-using Backend.Core;
-using System.Collections.Generic;
+﻿using Backend.Core;
 using Backend.Core.QuizAnswers;
-using Backend.Core.QuizQuestions;
-using Backend.Data;
-using System;
 using ClientApp.Models;
+using System.Collections.Generic;
+using System.Windows;
 
 namespace ClientApp
 {
@@ -19,9 +16,10 @@ namespace ClientApp
             InitializeComponent();
             KnowledgeBase knowledgebase = KnowledgeBase.GetInstance();
             var questions = knowledgebase.GetQuestions();
-            
+
             List<QuizItem> items = new List<QuizItem>();
-            foreach (var question in questions) {
+            foreach (var question in questions)
+            {
                 items.Add(new QuizItem(question.Name, question.Description));
             }
 
@@ -35,8 +33,9 @@ namespace ClientApp
 
             List<IQuizAnswer> answerList = new List<IQuizAnswer>();
 
-            foreach (QuizItem tmp in UserFormList.Items) {
-                answerList.Add(new QuizAnswer(tmp.name,tmp.val));
+            foreach (QuizItem tmp in UserFormList.Items)
+            {
+                answerList.Add(new QuizAnswer(tmp.name, tmp.val));
             }
 
             InferenceEngine engine = InferenceEngine.GetInstance();
