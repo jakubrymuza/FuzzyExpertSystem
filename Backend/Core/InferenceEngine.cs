@@ -77,6 +77,7 @@ namespace Backend.Core
 
             foreach (var wtrip in tripWithWeightL)
                 results.Add(wtrip.Trip);
+
             return results;
         }
 

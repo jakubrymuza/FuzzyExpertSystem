@@ -6,6 +6,7 @@ using Backend.Exceptions;
 using System.Collections.Generic;
 using System.Text.Json;
 
+
 namespace Backend.Core
 {
     public class KnowledgeBase
@@ -83,6 +84,7 @@ namespace Backend.Core
             Rule newRoot = (Rule)_Rules[name];
             newRoot.IsRoot = true;
             _RootEvaluable = newRoot;
+            SaveRules();
         }
 
         /// <summary>
