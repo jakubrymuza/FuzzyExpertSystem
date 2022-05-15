@@ -33,8 +33,6 @@ namespace Backend.Core
 
             if (rule.IsRoot)
                 _RootEvaluable = rule;
-
-            SaveRules();
         }
 
         /// <summary>
@@ -43,7 +41,6 @@ namespace Backend.Core
         public void RemoveRule(string key)
         {
             _Rules.Remove(key);
-            SaveRules();
         }
 
         /// <summary>
@@ -84,7 +81,6 @@ namespace Backend.Core
             Rule newRoot = (Rule)_Rules[name];
             newRoot.IsRoot = true;
             _RootEvaluable = newRoot;
-            SaveRules();
         }
 
         /// <summary>
@@ -100,6 +96,22 @@ namespace Backend.Core
         /// returns root evaluable
         /// </summary>
         public IEvaluable GetRoot() => _RootEvaluable!;
+
+        /// <summary>
+        /// saves new rules
+        /// </summary>
+        public void SaveRules()
+        {
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            // The following code is necessary to serialize all properties from Rule class
+            Dictionary<string, Rule> _Rules2 = new();
+            foreach (var rule in _Rules)
+            {
+                _Rules2.Add(rule.Key, (Rule)rule.Value);
+            }
+            string jsonString = JsonSerializer.Serialize(_Rules2, options);
+            System.IO.File.WriteAllText(_RulesPath, jsonString);
+        }
 
         // ---------- PRIVATE ---------- 
 
@@ -127,19 +139,6 @@ namespace Backend.Core
             _Rules = LoadRules();
             _Trips = LoadTrips();
             _QuizAnswers = new();
-        }
-
-        private void SaveRules()
-        {
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            // The following code is necessary to serialize all properties from Rule class
-            Dictionary<string, Rule> _Rules2 = new();
-            foreach (var rule in _Rules)
-            {
-                _Rules2.Add(rule.Key, (Rule)rule.Value);
-            }
-            string jsonString = JsonSerializer.Serialize(_Rules2, options);
-            System.IO.File.WriteAllText(_RulesPath, jsonString);
         }
 
         private Dictionary<string, IEvaluable> LoadRules()
