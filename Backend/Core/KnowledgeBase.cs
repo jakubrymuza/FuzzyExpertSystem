@@ -4,8 +4,9 @@ using Backend.Core.QuizQuestions;
 using Backend.Core.Trips;
 using Backend.Exceptions;
 using System.Collections.Generic;
+using System.Text.Encodings.Web;
 using System.Text.Json;
-
+using System.Text.Unicode;
 
 namespace Backend.Core
 {
@@ -131,7 +132,13 @@ namespace Backend.Core
 
         private void SaveRules()
         {
-            var options = new JsonSerializerOptions { WriteIndented = true };
+            var options = new JsonSerializerOptions 
+            {
+                // Not all of those LatinExtended may be necessary
+                Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.LatinExtendedA, UnicodeRanges.LatinExtendedAdditional,
+                UnicodeRanges.LatinExtendedB, UnicodeRanges.LatinExtendedC, UnicodeRanges.LatinExtendedD, UnicodeRanges.LatinExtendedE),
+                WriteIndented = true 
+            };
             // The following code is necessary to serialize all properties from Rule class
             Dictionary<string, Rule> _Rules2 = new();
             foreach (var rule in _Rules)
