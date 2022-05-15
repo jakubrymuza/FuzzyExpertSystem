@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExpertApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing">
     <Grid>
         <TabControl>
             <TabItem Header="Add Rule">
@@ -88,8 +88,8 @@
                                 <ColumnDefinition Width="100*"/>
                                 <ColumnDefinition Width="100*"/>
                             </Grid.ColumnDefinitions>
-                            <Button Grid.Column="1" Content="Remove" Name="RemoveButton" Click="RemoveButton_Click" Margin="10,0,93,0" Grid.ColumnSpan="2" />
-                            <Button Grid.Column="2" Content="Set as root" Name="RootButton" Click="RootButton_Click" Margin="14,0,0,0" />
+                            <Button Grid.Column="1" Content="Remove" Name="RemoveButton" Click="RemoveButton_Click" />
+                            <Button Grid.Column="2" Content="Set as root" Name="RootButton" Click="RootButton_Click" />
 
 
                         </Grid>

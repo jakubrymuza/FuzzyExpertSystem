@@ -77,6 +77,9 @@ namespace ExpertApp
             CurrentRoot.Text = knowledgeBase.GetRoot().Name;
         }
 
-
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            knowledgeBase.SaveRules();
+        }
     }
 }
