@@ -1,26 +1,26 @@
 [
   {
-    "Name": "Góry",
+    "Name": "Góry - ankieta",
     "Description": "Jak bardzo chcesz jechać w góry?"
   },
   {
-    "Name": "Morze",
+    "Name": "Morze - ankieta",
     "Description": "Jak bardzo chcesz jechać nad morze?"
   },
   {
-    "Name": "Temperatura",
+    "Name": "Temperatura - ankieta",
     "Description": "Jaka jest Twoja oczekiwana temperatura (im wyższa wartość tym większa)?"
   },
   {
-    "Name": "Odległość",
+    "Name": "Odległość - ankieta",
     "Description": "Jak daleko chcesz jechać? (im wyższa wartość tym dalej)"
   },
   {
-    "Name": "Zabytki",
+    "Name": "Zabytki - ankieta",
     "Description": "Jak ważne jest dla Ciebie zwiedzanie zabytków?"
   },
   {
-    "Name": "NiskieCeny",
+    "Name": "Niskie ceny - ankieta",
     "Description": "Jak ważne dla Ciebie są niskie ceny na miejscu?"
   }
 ]

@@ -133,12 +133,12 @@ namespace Backend.Core
         private static readonly string _QuestionsPath = "../../../../Backend/Data/questions.json";
         private static readonly string[] _PropertyNames = new string[]
             {
-                "Mountains",
-                "Sea",
-                "Temperature",
-                "Distance",
-                "Antiques",
-                "LowPrices"
+                "Góry - wycieczka",
+                "Morze - wycieczka",
+                "Temperatura - wycieczka",
+                "Odleg³oœæ - wycieczka",
+                "Zabytki - wycieczka",
+                "Niskie ceny - wycieczka"
             };
 
         private KnowledgeBase()

@@ -2,28 +2,28 @@
   {
     "Name": "Poland",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.4
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.2
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.4
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.2
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.7
       }
     }
@@ -31,28 +31,28 @@
   {
     "Name": "Spain",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.3
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.7
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.8
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.4
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.2
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.4
       }
     }
@@ -60,28 +60,28 @@
   {
     "Name": "Greece",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.6
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.7
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.9
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.3
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.8
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.5
       }
     }
@@ -89,28 +89,28 @@
   {
     "Name": "Italy",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.6
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.7
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.7
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.3
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.8
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.4
       }
     }
@@ -118,28 +118,28 @@
   {
     "Name": "Turkey",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.6
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.5
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.7
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.5
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.5
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.8
       }
     }
@@ -147,28 +147,28 @@
   {
     "Name": "Germany",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.5
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.3
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.4
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.1
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.2
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.4
       }
     }
@@ -176,28 +176,28 @@
   {
     "Name": "France",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.7
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.5
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.6
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.2
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.4
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.3
       }
     }
@@ -205,28 +205,28 @@
   {
     "Name": "Czech Republic",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.4
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.4
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.1
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.2
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.6
       }
     }
@@ -234,28 +234,28 @@
   {
     "Name": "Switzerland",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.7
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.4
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.2
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.1
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.1
       }
     }
@@ -263,28 +263,28 @@
   {
     "Name": "Norway",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.5
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.5
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.2
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.2
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.1
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.2
       }
     }
@@ -292,28 +292,28 @@
   {
     "Name": "Australia",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.1
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.4
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.7
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.9
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.1
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.3
       }
     }
@@ -321,28 +321,28 @@
   {
     "Name": "Brazil",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.1
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.6
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.9
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.8
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.2
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.7
       }
     }
@@ -350,28 +350,28 @@
   {
     "Name": "Egypt",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.7
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.9
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.6
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0.8
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.8
       }
     }
@@ -379,28 +379,28 @@
   {
     "Name": "Cyprus",
     "Records": {
-      "Mountains": {
-        "Name": "Mountains",
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0
       },
-      "Sea": {
-        "Name": "Sea",
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
         "Value": 0.9
       },
-      "Temperature": {
-        "Name": "Temperature",
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
         "Value": 0.9
       },
-      "Distance": {
-        "Name": "Distance",
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
         "Value": 0.5
       },
-      "Antiques": {
-        "Name": "Antiques",
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
         "Value": 0
       },
-      "LowPrices": {
-        "Name": "LowPrices",
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
         "Value": 0.5
       }
     }
