@@ -90,11 +90,9 @@ namespace Backend.Core
 
         private double CalculateTrip(ITrip trip)
         {
-            var tripData = trip.Records;
-
             _Evaluables.Clear();
             _Evaluables.Merge(_QuizAnswers);
-            _Evaluables.Merge(tripData);
+            _Evaluables.Merge(trip.Records);
             _Evaluables.Merge(_KnowledgeBase.GetRulesDict());
 
             return _KnowledgeBase.GetRoot().Evaluate();
