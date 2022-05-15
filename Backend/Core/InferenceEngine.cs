@@ -95,6 +95,7 @@ namespace Backend.Core
             _Evaluables.Clear();
             _Evaluables.Merge(_QuizAnswers);
             _Evaluables.Merge(tripData);
+            _Evaluables.Merge(_KnowledgeBase.GetRulesDict());
 
             return _KnowledgeBase.GetRoot().Evaluate();
         }
