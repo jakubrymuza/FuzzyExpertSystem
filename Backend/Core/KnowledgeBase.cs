@@ -105,9 +105,7 @@ namespace Backend.Core
         {
             var options = new JsonSerializerOptions
             {
-                // Not all of those LatinExtended may be necessary
-                Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.LatinExtendedA, UnicodeRanges.LatinExtendedAdditional,
-                UnicodeRanges.LatinExtendedB, UnicodeRanges.LatinExtendedC, UnicodeRanges.LatinExtendedD, UnicodeRanges.LatinExtendedE),
+                Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.LatinExtendedA, UnicodeRanges.Latin1Supplement),
                 WriteIndented = true
             };
             // The following code is necessary to serialize all properties from Rule class

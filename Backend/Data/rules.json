@@ -1,16 +1,9 @@
 {
   "default root": {
     "Name": "default root",
-    "FirstArgumentName": "G\u00F3ry - wycieczka",
+    "FirstArgumentName": "Góry - wycieczka",
     "SecondArgumentName": "Morze - wycieczka",
     "OperatorType": 1,
-    "IsRoot": false
-  },
-  "ąśźż": {
-    "Name": "ąśźż",
-    "FirstArgumentName": "Odległość - ankieta",
-    "SecondArgumentName": "Odległość - wycieczka",
-    "OperatorType": 0,
     "IsRoot": true
   }
 }
