@@ -1,383 +1,6 @@
 [
   {
-    "Name": "Poland",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.4
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.2
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.4
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.2
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.7
-      }
-    }
-  },
-  {
-    "Name": "Spain",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.3
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.7
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.8
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.4
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.2
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.4
-      }
-    }
-  },
-  {
-    "Name": "Greece",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.6
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.7
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.9
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.3
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.8
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.5
-      }
-    }
-  },
-  {
-    "Name": "Italy",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.6
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.7
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.7
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.3
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.8
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.4
-      }
-    }
-  },
-  {
-    "Name": "Turkey",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.6
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.5
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.7
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.5
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.5
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.8
-      }
-    }
-  },
-  {
-    "Name": "Germany",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.5
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.3
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.4
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.1
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.2
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.4
-      }
-    }
-  },
-  {
-    "Name": "France",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.7
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.5
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.6
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.2
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.4
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.3
-      }
-    }
-  },
-  {
-    "Name": "Czech Republic",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.4
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.4
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.1
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.2
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.6
-      }
-    }
-  },
-  {
-    "Name": "Switzerland",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.7
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.4
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.2
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.1
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.1
-      }
-    }
-  },
-  {
-    "Name": "Norway",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.5
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.5
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.2
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.2
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.1
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.2
-      }
-    }
-  },
-  {
-    "Name": "Australia",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.1
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.4
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.7
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.9
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.1
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.3
-      }
-    }
-  },
-  {
-    "Name": "Brazil",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0.1
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.6
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.9
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.8
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.2
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.7
-      }
-    }
-  },
-  {
-    "Name": "Egypt",
-    "Records": {
-      "Góry - wycieczka": {
-        "Name": "Góry - wycieczka",
-        "Value": 0
-      },
-      "Morze - wycieczka": {
-        "Name": "Morze - wycieczka",
-        "Value": 0.7
-      },
-      "Temperatura - wycieczka": {
-        "Name": "Temperatura - wycieczka",
-        "Value": 0.9
-      },
-      "Odległość - wycieczka": {
-        "Name": "Odległość - wycieczka",
-        "Value": 0.6
-      },
-      "Zabytki - wycieczka": {
-        "Name": "Zabytki - wycieczka",
-        "Value": 0.8
-      },
-      "Niskie ceny - wycieczka": {
-        "Name": "Niskie ceny - wycieczka",
-        "Value": 0.8
-      }
-    }
-  },
-  {
-    "Name": "Cyprus",
+    "Name": "Wycieczka na Majorkę",
     "Records": {
       "Góry - wycieczka": {
         "Name": "Góry - wycieczka",
@@ -389,7 +12,299 @@
       },
       "Temperatura - wycieczka": {
         "Name": "Temperatura - wycieczka",
+        "Value": 0.8
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.4
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.4
+      }
+    }
+  },
+  {
+    "Name": "Wycieczka w Alpy",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
         "Value": 0.9
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.1
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.3
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.2
+      }
+    }
+  },
+  {
+    "Name": "Wycieczka do Rzymu",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
+        "Value": 0
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.5
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.3
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0.9
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.2
+      }
+    }
+  },
+  {
+    "Name": "Wycieczka do Pragi",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
+        "Value": 0
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.5
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.2
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0.8
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.6
+      }
+    }
+  },
+  {
+    "Name": "Wycieczka do meksykańskich ruin",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
+        "Value": 0.5
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.3
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.7
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0.8
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.5
+      }
+    }
+  },
+  {
+    "Name": "Wycieczka na Kretę",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
+        "Value": 0.3
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0.7
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.6
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.3
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0.5
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.4
+      }
+    }
+  },
+  {
+    "Name": "Wycieczka nad Morze Bałtyckie",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
+        "Value": 0
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0.6
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.4
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.1
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.5
+      }
+    }
+  },
+  {
+    "Name": "Wycieczka w Tatry",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
+        "Value": 0.8
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.3
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.1
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.5
+      }
+    }
+  },
+  {
+    "Name": "Wycieczka na Hawaje",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
+        "Value": 0.3
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0.7
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.6
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.9
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0.2
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.3
+      }
+    }
+  },
+
+  {
+    "Name": "Wycieczka do brazylijskiej dżungli",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
+        "Value": 0
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.9
+      },
+      "Odległość - wycieczka": {
+        "Name": "Odległość - wycieczka",
+        "Value": 0.8
+      },
+      "Zabytki - wycieczka": {
+        "Name": "Zabytki - wycieczka",
+        "Value": 0
+      },
+      "Niskie ceny - wycieczka": {
+        "Name": "Niskie ceny - wycieczka",
+        "Value": 0.7
+      }
+    }
+  },
+
+  {
+    "Name": "Wycieczka na Cypr",
+    "Records": {
+      "Góry - wycieczka": {
+        "Name": "Góry - wycieczka",
+        "Value": 0
+      },
+      "Morze - wycieczka": {
+        "Name": "Morze - wycieczka",
+        "Value": 0.9
+      },
+      "Temperatura - wycieczka": {
+        "Name": "Temperatura - wycieczka",
+        "Value": 0.8
       },
       "Odległość - wycieczka": {
         "Name": "Odległość - wycieczka",
