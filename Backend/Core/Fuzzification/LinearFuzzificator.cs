@@ -16,7 +16,7 @@
             if (crispValue > MaxValue || crispValue < MinValue)
                 throw new System.ArgumentOutOfRangeException();
 
-            return (crispValue - MinValue) / (MaxValue - MinValue);
+            return (double)(crispValue - MinValue) / (MaxValue - MinValue);
         }
     }
 }

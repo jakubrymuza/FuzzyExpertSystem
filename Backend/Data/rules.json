@@ -1,11 +1,4 @@
 {
-  "default root": {
-    "Name": "default root",
-    "FirstArgumentName": "Góry - wycieczka",
-    "SecondArgumentName": "Morze - wycieczka",
-    "OperatorType": 1,
-    "IsRoot": false
-  },
   "góry - zasada": {
     "Name": "góry - zasada",
     "FirstArgumentName": "Góry - ankieta",
