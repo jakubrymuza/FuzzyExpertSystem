@@ -4,6 +4,83 @@
     "FirstArgumentName": "Góry - wycieczka",
     "SecondArgumentName": "Morze - wycieczka",
     "OperatorType": 1,
+    "IsRoot": false
+  },
+  "góry - zasada": {
+    "Name": "góry - zasada",
+    "FirstArgumentName": "Góry - ankieta",
+    "SecondArgumentName": "Góry - wycieczka",
+    "OperatorType": 0,
+    "IsRoot": false
+  },
+  "morze - zasada": {
+    "Name": "morze - zasada",
+    "FirstArgumentName": "Morze - ankieta",
+    "SecondArgumentName": "Morze - wycieczka",
+    "OperatorType": 0,
+    "IsRoot": false
+  },
+  "temperatura - zasada": {
+    "Name": "temperatura - zasada",
+    "FirstArgumentName": "Temperatura - ankieta",
+    "SecondArgumentName": "Temperatura - wycieczka",
+    "OperatorType": 0,
+    "IsRoot": false
+  },
+  "odległość - zasada": {
+    "Name": "odległość - zasada",
+    "FirstArgumentName": "Odległość - ankieta",
+    "SecondArgumentName": "Odległość - wycieczka",
+    "OperatorType": 0,
+    "IsRoot": false
+  },
+  "zabytki - zasada": {
+    "Name": "zabytki - zasada",
+    "FirstArgumentName": "Zabytki - ankieta",
+    "SecondArgumentName": "Zabytki - wycieczka",
+    "OperatorType": 0,
+    "IsRoot": false
+  },
+  "ceny - zasada": {
+    "Name": "ceny - zasada",
+    "FirstArgumentName": "Niskie ceny - ankieta",
+    "SecondArgumentName": "Niskie ceny - wycieczka",
+    "OperatorType": 0,
+    "IsRoot": false
+  },
+  "gm - zasada": {
+    "Name": "gm - zasada",
+    "FirstArgumentName": "góry - zasada",
+    "SecondArgumentName": "morze - zasada",
+    "OperatorType": 1,
+    "IsRoot": false
+  },
+  "gmt - zasada": {
+    "Name": "gmt - zasada",
+    "FirstArgumentName": "gm - zasada",
+    "SecondArgumentName": "temperatura - zasada",
+    "OperatorType": 1,
+    "IsRoot": false
+  },
+  "gmto - zasada": {
+    "Name": "gmto - zasada",
+    "FirstArgumentName": "gmt - zasada",
+    "SecondArgumentName": "odległość - zasada",
+    "OperatorType": 1,
+    "IsRoot": false
+  },
+  "gmtoz - zasada": {
+    "Name": "gmtoz - zasada",
+    "FirstArgumentName": "gmto - zasada",
+    "SecondArgumentName": "zabytki - zasada",
+    "OperatorType": 1,
+    "IsRoot": false
+  },
+  "gmtozc - zasada": {
+    "Name": "gmtozc - zasada",
+    "FirstArgumentName": "gmtoz - zasada",
+    "SecondArgumentName": "ceny - zasada",
+    "OperatorType": 1,
     "IsRoot": true
   }
 }
