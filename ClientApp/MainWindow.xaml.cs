@@ -1,8 +1,10 @@
 ﻿using Backend.Core;
 using Backend.Core.QuizAnswers;
+using Backend.Core.Trips;
 using ClientApp.Models;
 using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace ClientApp
 {
@@ -49,7 +51,18 @@ namespace ClientApp
             return;
         }
 
-
+        private void ListViewItem_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            var item = ((ListViewItem)sender).Content as WeightedTrip;
+            string message = string.Empty;
+            message += $"Góry: {item!.Records["Góry - wycieczka"].Evaluate() * 10}\n";
+            message += $"Morze: {item.Records["Morze - wycieczka"].Evaluate() * 10}\n";
+            message += $"Odległość: {item.Records["Odległość - wycieczka"].Evaluate() * 10}\n";
+            message += $"Temperatura: {item.Records["Temperatura - wycieczka"].Evaluate() * 10}\n";
+            message += $"Zabytki: {item.Records["Zabytki - wycieczka"].Evaluate() * 10}\n";
+            message += $"Niskie ceny: {item.Records["Niskie ceny - wycieczka"].Evaluate() * 10}\n";
+            MessageBox.Show(message, item.Name, MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 
 
