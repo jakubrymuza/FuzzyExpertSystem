@@ -48,7 +48,14 @@ namespace ExpertApp
 
         private void RemoveButton_Click(object sender, RoutedEventArgs e)
         {
-            knowledgeBase.RemoveRule((string)this.RulesToEdit.SelectedItem);
+            try
+            {
+                knowledgeBase.RemoveRule((string)this.RulesToEdit.SelectedItem);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             RefreshAllRulesLists();
         }
         private void RootButton_Click(object sender, RoutedEventArgs e)

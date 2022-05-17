@@ -41,6 +41,8 @@ namespace Backend.Core
         /// </summary>
         public void RemoveRule(string key)
         {
+            if (((Rule)_Rules[key]).IsRoot)
+                throw new RuleIsRootException(key);
             _Rules.Remove(key);
         }
 
