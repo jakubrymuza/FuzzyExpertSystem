@@ -1,9 +1,11 @@
 using Backend.Core;
 using Backend.Core.CalculatingEngines;
+using Backend.Core.Evaluables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace ExpertApp
 {
@@ -80,6 +82,20 @@ namespace ExpertApp
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             knowledgeBase.SaveRules();
+        }
+
+        private void ListBoxItem_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            string? item = ((ListBoxItem)sender).Content.ToString();
+            IEnumerable<IEvaluable> seq = knowledgeBase.GetRules().Where(e => e.Name == item);
+            if (!seq.Any()) return;
+            Rule? rule = knowledgeBase.GetRules().Where(e => e.Name == item).First() as Rule;
+            string message = string.Empty;
+            message += $"Argument 1: {rule!.FirstArgumentName}\n";
+            message += $"Argument 2: {rule.SecondArgumentName}\n";
+            message += $"Operator: {rule.OperatorType}\n";
+            message += $"Korzeń: {rule.IsRoot}\n";
+            MessageBox.Show(message, rule.Name, MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

@@ -28,13 +28,25 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                         <GroupBox Grid.Row="0" Grid.Column="0" Header="First Preference">
-                            <ListBox Name="FirstPreference"/>
+                            <ListBox Name="FirstPreference">
+                                <ListBox.ItemContainerStyle>
+                                    <Style TargetType="ListBoxItem">
+                                        <EventSetter Event="MouseDoubleClick" Handler="ListBoxItem_MouseDoubleClick"></EventSetter>
+                                    </Style>
+                                </ListBox.ItemContainerStyle>
+                            </ListBox>
                         </GroupBox>
                         <GroupBox Grid.Row="0" Grid.Column="1" Header="Process Method">
                             <ListBox Name="ProcessMethod"/>
                         </GroupBox>
                         <GroupBox Grid.Row="0" Grid.Column="2" Header="Second Preference">
-                            <ListBox Name="SecondPreference"/>
+                            <ListBox Name="SecondPreference">
+                                <ListBox.ItemContainerStyle>
+                                    <Style TargetType="ListBoxItem">
+                                        <EventSetter Event="MouseDoubleClick" Handler="ListBoxItem_MouseDoubleClick"></EventSetter>
+                                    </Style>
+                                </ListBox.ItemContainerStyle>
+                            </ListBox>
                         </GroupBox>
                         <Grid Grid.Row="0" Grid.Column="3">
                             <Grid.RowDefinitions>
@@ -69,7 +81,13 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <GroupBox Grid.Row="0" Grid.Column="1" Header="Rules">
-                        <ListBox Name="RulesToEdit" SelectionMode="Single"/>
+                        <ListBox Name="RulesToEdit" SelectionMode="Single">
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="ListBoxItem">
+                                    <EventSetter Event="MouseDoubleClick" Handler="ListBoxItem_MouseDoubleClick"></EventSetter>
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                        </ListBox>
                     </GroupBox>
                     <Grid Grid.Column="2">
                         <Grid.RowDefinitions>
